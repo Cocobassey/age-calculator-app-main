@@ -1,0 +1,156 @@
+body {
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 94%);
+    max-width: 1440px;
+}
+
+.main {
+    background-color: white;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    /* max-width: 1024px; */
+}
+
+.form_label {
+    color: hsl(0, 0%, 86%);
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.2em; /*3.2px (try 1.5px)*/
+    box-sizing: border-box;
+    margin: 10px 40px;
+    padding: 10px 25px 10px 30px;
+    text-align: left;
+    position: relative;
+    left: 20%;
+    top:20px;
+}
+
+input {
+    box-sizing: border-box;
+    color: hsl(0, 1%, 44%);
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-weight: 700;
+    width: 10%;
+    padding: 10px 20px;
+    margin: 15px 25px 50px 20px; 
+    font-size: 32px;
+    outline: none;
+    position: relative;
+    right: 270px;
+    top: 70px; 
+}
+
+input:active {
+    cursor: pointer;
+  }
+
+input:hover {
+    border: 1px solid  hsl(259, 100%, 65%);
+}
+
+img {
+    background-color:hsl(259, 100%, 65%);
+    border-radius: 50%;
+    position: absolute;
+    left: 70%;
+    top: 150px;
+    width: 50px;
+    padding: 15px;
+}
+
+img:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+hr {
+    height: 1px;
+    background-color: hsl(0, 0%, 86%);
+    border: none;
+    margin: 0;
+    position: relative;
+    top: 50px;
+}
+
+.age_counter {
+    margin-top: 200px;
+}
+
+.counter {
+    color: hsl(259, 100%, 65%);
+    font-size: 70px;
+}
+
+h3 {
+    box-sizing: border-box;
+    color: hsl(0, 0%, 8%);
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+    text-align: left;
+    position: relative;
+    left: 320px;
+    margin: 0;
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+        height: 100vh;
+        overflow-x: hidden;
+    } 
+
+     .form_label {
+        box-sizing: border-box;
+        position: initial;
+        display: inline;
+        font-size: 13px;
+        margin: 10px 35px 10px 10px;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 0.1em;
+        /* width: calc(100% / 3);
+        margin-right: 10px; */
+    }
+
+    input {
+        box-sizing: border-box;
+        position: initial;
+        display: inline;
+        font-size: 14px;
+        width: 22%;
+        padding: 10px 10px;
+        margin: 5px 15px 20px 15px; 
+    }
+
+    hr {
+        position: relative;
+        top: 70px;
+    }
+
+    img {
+        position: absolute;
+        left: 40%;
+        top: 140px;
+        width: 30px;
+    }
+
+    .age_counter {
+        margin: 150px 5px 10px 10px;
+        padding: 10px 3px 10px 5px;
+    }
+    
+    .counter {
+        font-size: 60px;
+    }
+    
+    h3 {
+        box-sizing: border-box;
+        font-size: 60px;
+        position: inherit;
+        margin: 0;
+    }
+     
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style> 
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="form">
+      <form action="#">
+        <label for="day" class="form_label" >DAY</label>
+        <label for="month" class="form_label" >MONTH</label>
+        <label for="year" class="form_label" >YEAR</label>
+      <!-- <br> -->
+        <input type="text" name="day" id="day" placeholder="DD" minlength="1" maxlength="2" required >
+        <!--  <span id="error-message"></span> -->
+        <input type="text" name="month" id="month" placeholder="MM" minlength="1" maxlength="2" required >
+        <!--  <span id="error-message"></span> -->
+        <input type="text" name="year" id="year" placeholder="YYYY" minlength="4" maxlength="4" required >
+        <!--  <span id="error-message"></span> -->
+      </form>
+    </div>
+    <div class="img">
+      <hr><img src="./assets/images/icon-arrow.svg" alt="icon-arrow" onclick="calculate()">
+    </div>
+    <div class="age_counter">
+      <h3><span class="counter year">--</span> years</h3>
+      <h3><span class="counter month">--</span> months</h3>
+      <h3><span class="counter day">--</span> days</h3>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Cococodes</a>.
+  </div>
+</body>
+</html>
